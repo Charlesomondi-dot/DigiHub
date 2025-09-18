@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Hub - Creative Learning Programs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utilities.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <!-- Logo -->
+                    <div class="logo-container">
+                        <img src="assets/GetLogoST.png" alt="" class="h-10 w-auto mr-3">
+                        <div class="text-2xl font-bold text-indigo-600">Digital Hub</div>
+                    </div>
+                </div>
+                <div class="flex items-center ml-auto">
+                    <div class="hidden md:flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium transition-colors">Home</a>
+                        <a href="#programs" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium transition-colors">Programs</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium transition-colors">About</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium transition-colors">Contact</a>
+                    </div>
+                    <img src="assets/DIGIHUB.png" alt="Digital Hub Logo" class="h-8 w-auto ml-6">
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-indigo-600" aria-label="Open mobile menu">
+                        <span class="sr-only">Open mobile menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Home</a>
+                <a href="#programs" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Programs</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">About</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Carousel -->
+    <section id="home" class="hero-carousel-section">
+        <!-- Background Carousel -->
+        <div class="hero-carousel">
+            <div class="hero-carousel-container">
+                
+                <!-- Slide 1: AI (Artificial Intelligence) -->
+                <div class="hero-slide active slide-ai">
+                    <div class="slide-background">
+                        <img src="ai-background.jpg" alt="AI Learning" class="slide-bg-image">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-icon">🤖</div>
+                        <h2 class="slide-title">Artificial Intelligence</h2>
+                        <p class="slide-description">Explore the future of technology with AI and Machine Learning fundamentals</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Graphics Design -->
+                <div class="hero-slide slide-design">
+                    <div class="slide-background">
+                        <img src="design-background.jpg" alt="Graphics Design" class="slide-bg-image">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-icon">🎨</div>
+                        <h2 class="slide-title">Graphics Design</h2>
+                        <p class="slide-description">Create stunning visual content with professional design tools and techniques</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Digital Marketing -->
+                <div class="hero-slide slide-marketing">
+                    <div class="slide-background">
+                        <img src="marketing-background.jpg" alt="Digital Marketing" class="slide-bg-image">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-icon">📱</div>
+                        <h2 class="slide-title">Digital Marketing</h2>
+                        <p class="slide-description">Master modern marketing strategies and social media campaigns</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Scratch Programming for Kids -->
+                <div class="hero-slide slide-scratch">
+                    <div class="slide-background">
+                        <img src="scratch-background.jpg" alt="Scratch Programming" class="slide-bg-image">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-icon">🧩</div>
+                        <h2 class="slide-title">Scratch Programming for Kids</h2>
+                        <p class="slide-description">Fun and interactive coding lessons that make programming accessible to young minds</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Digital Literacy -->
+                <div class="hero-slide slide-literacy">
+                    <div class="slide-background">
+                        <img src="literacy-background.jpg" alt="Digital Literacy" class="slide-bg-image">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-icon">💻</div>
+                        <h2 class="slide-title">Digital Literacy</h2>
+                        <p class="slide-description">Essential computer skills and digital citizenship for the modern world</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Web Development -->
+                <div class="hero-slide slide-webdev">
+                    <div class="slide-background">
+                        <img src="webdev-background.jpg" alt="Web Development" class="slide-bg-image">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-icon">🌐</div>
+                        <h2 class="slide-title">Web Development</h2>
+                        <p class="slide-description">Build modern websites and web applications with cutting-edge technologies</p>
+                    </div>
+                </div>
+
+                <!-- Slide 7: Animations -->
+                <div class="hero-slide slide-animation">
+                    <div class="slide-background">
+                        <img src="animation-background.jpg" alt="Animation" class="slide-bg-image">
+                        <div class="slide-overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-icon">🎬</div>
+                        <h2 class="slide-title">Animations</h2>
+                        <p class="slide-description">Bring ideas to life with 2D and 3D animation techniques</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Overlay Content -->
+            <div class="hero-overlay-content">
+                <div class="hero-main-content">
+                    <!-- Dynamic content that changes with slides -->
+                    <div class="hero-dynamic-content">
+                        
+                        <!-- AI Content -->
+                        <div class="hero-content-slide active" data-slide="0">
+                            <div class="hero-icon">🤖</div>
+                            <h1 class="hero-main-title">Artificial Intelligence</h1>
+                            <p class="hero-main-subtitle">Future Technology Training</p>
+                            <p class="hero-tagline">Explore machine learning, neural networks, and AI applications. Learn to build intelligent systems and understand the technology shaping tomorrow.</p>
+                            <div class="hero-features">
+                                <span class="feature-tag">Machine Learning</span>
+                                <span class="feature-tag">Neural Networks</span>
+                                <span class="feature-tag">AI Applications</span>
+                            </div>
+                        </div>
+
+                        <!-- Graphics Design Content -->
+                        <div class="hero-content-slide" data-slide="1">
+                            <div class="hero-icon">🎨</div>
+                            <h1 class="hero-main-title">Graphics Design</h1>
+                            <p class="hero-main-subtitle">Creative Visual Communication</p>
+                            <p class="hero-tagline">Master Adobe Creative Suite, design principles, and digital art. Create stunning visuals, logos, and brand identities that captivate audiences.</p>
+                            <div class="hero-features">
+                                <span class="feature-tag">Adobe Creative Suite</span>
+                                <span class="feature-tag">Brand Design</span>
+                                <span class="feature-tag">Digital Art</span>
+                            </div>
+                        </div>
+
+                        <!-- Digital Marketing Content -->
+                        <div class="hero-content-slide" data-slide="2">
+                            <div class="hero-icon">📱</div>
+                            <h1 class="hero-main-title">Digital Marketing</h1>
+                            <p class="hero-main-subtitle">Modern Marketing Strategies</p>
+                            <p class="hero-tagline">Learn social media marketing, SEO, content strategy, and analytics. Build campaigns that reach and engage your target audience effectively.</p>
+                            <div class="hero-features">
+                                <span class="feature-tag">Social Media</span>
+                                <span class="feature-tag">SEO & Analytics</span>
+                                <span class="feature-tag">Content Strategy</span>
+                            </div>
+                        </div>
+
+                        <!-- Scratch Programming Content -->
+                        <div class="hero-content-slide" data-slide="3">
+                            <div class="hero-icon">🧩</div>
+                            <h1 class="hero-main-title">Scratch Programming</h1>
+                            <p class="hero-main-subtitle">Coding for Young Minds</p>
+                            <p class="hero-tagline">Fun, visual programming that teaches logic and creativity. Kids build games, stories, and animations while learning computational thinking.</p>
+                            <div class="hero-features">
+                                <span class="feature-tag">Visual Programming</span>
+                                <span class="feature-tag">Game Creation</span>
+                                <span class="feature-tag">Logic Building</span>
+                            </div>
+                        </div>
+
+                        <!-- Digital Literacy Content -->
+                        <div class="hero-content-slide" data-slide="4">
+                            <div class="hero-icon">💻</div>
+                            <h1 class="hero-main-title">Digital Literacy</h1>
+                            <p class="hero-main-subtitle">Essential Computer Skills</p>
+                            <p class="hero-tagline">Master fundamental computer skills, internet safety, and digital citizenship. Build confidence in navigating the digital world safely and effectively.</p>
+                            <div class="hero-features">
+                                <span class="feature-tag">Computer Basics</span>
+                                <span class="feature-tag">Internet Safety</span>
+                                <span class="feature-tag">Digital Citizenship</span>
+                            </div>
+                        </div>
+
+                        <!-- Web Development Content -->
+                        <div class="hero-content-slide" data-slide="5">
+                            <div class="hero-icon">🌐</div>
+                            <h1 class="hero-main-title">Web Development</h1>
+                            <p class="hero-main-subtitle">Modern Website Creation</p>
+                            <p class="hero-tagline">Build responsive websites with HTML, CSS, JavaScript, and modern frameworks. Create dynamic web applications that work across all devices.</p>
+                            <div class="hero-features">
+                                <span class="feature-tag">HTML/CSS/JS</span>
+                                <span class="feature-tag">Responsive Design</span>
+                                <span class="feature-tag">Modern Frameworks</span>
+                            </div>
+                        </div>
+
+                        <!-- Animations Content -->
+                        <div class="hero-content-slide" data-slide="6">
+                            <div class="hero-icon">🎬</div>
+                            <h1 class="hero-main-title">Animations</h1>
+                            <p class="hero-main-subtitle">Bringing Ideas to Life</p>
+                            <p class="hero-tagline">Create stunning 2D and 3D animations, motion graphics, and visual effects. Learn industry-standard tools and bring your creative visions to reality.</p>
+                            <div class="hero-features">
+                                <span class="feature-tag">2D/3D Animation</span>
+                                <span class="feature-tag">Motion Graphics</span>
+                                <span class="feature-tag">Visual Effects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 py-16">
+        <div class="section-content text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Start Your Digital Journey?</h2>
+                <p class="text-lg md:text-xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
+                    Join St. Joseph's Technical Training Institute Digital Hub and unlock your potential in technology, creativity, and innovation.
+                </p>
+                <div class="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button onclick="scrollToSection('programs')" class="btn-primary bg-white text-indigo-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Explore Programs
+                    </button>
+                    <button onclick="scrollToSection('contact')" class="btn-secondary border-2 border-white text-white hover:bg-white hover:text-indigo-600 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Hub Activities - Multiple Carousels Section -->
+    <section class="carousel-section bg-white py-20">
+        <div class="section-content">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What We Do at Digital Hub</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover the innovative learning experiences and hands-on training at St. Joseph's Technical Training Institute</p>
+            </div>
+            
+            <!-- Main Programs Carousel -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Core Programs</h3>
+                <div class="carousel-container relative max-w-6xl mx-auto fade-in" id="programsCarousel">
+                    <div class="carousel-wrapper overflow-hidden rounded-2xl shadow-2xl">
+                        <div class="carousel-track flex transition-transform duration-500 ease-in-out" id="programsCarouselTrack">
+                            
+                            <!-- Slide 1: Computer Programming -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-blue-600 to-purple-700 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">💻</div>
+                                            <h3 class="text-3xl font-bold mb-4">Computer Programming</h3>
+                                            <p class="text-lg mb-6">Students learn cutting-edge programming languages including Python, JavaScript, and Java. Our hands-on approach ensures practical skills development through real-world projects.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ Web Development (HTML, CSS, JavaScript)</li>
+                                                <li>✓ Python Programming & Data Analysis</li>
+                                                <li>✓ Mobile App Development</li>
+                                                <li>✓ Database Management</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">🖥️</div>
+                                                <p class="text-center font-semibold">Modern Computer Labs</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2: Digital Design & Graphics -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-pink-500 to-orange-500 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">🎨</div>
+                                            <h3 class="text-3xl font-bold mb-4">Digital Design & Graphics</h3>
+                                            <p class="text-lg mb-6">Creative minds flourish in our design studios where students master Adobe Creative Suite, create stunning visuals, and develop brand identities.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ Adobe Photoshop & Illustrator</li>
+                                                <li>✓ Logo & Brand Design</li>
+                                                <li>✓ UI/UX Design Principles</li>
+                                                <li>✓ Print & Digital Media</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">🎭</div>
+                                                <p class="text-center font-semibold">Creative Studios</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3: Digital Marketing -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-green-500 to-blue-600 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">📱</div>
+                                            <h3 class="text-3xl font-bold mb-4">Digital Marketing</h3>
+                                            <p class="text-lg mb-6">Learn to create compelling digital campaigns, understand analytics, and master social media strategies in our marketing lab.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ Social Media Marketing</li>
+                                                <li>✓ SEO & Content Strategy</li>
+                                                <li>✓ Google Analytics & Ads</li>
+                                                <li>✓ Email Marketing Campaigns</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">📊</div>
+                                                <p class="text-center font-semibold">Marketing Lab</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4: Artificial Intelligence -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-purple-600 to-indigo-700 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">🤖</div>
+                                            <h3 class="text-3xl font-bold mb-4">Artificial Intelligence</h3>
+                                            <p class="text-lg mb-6">Dive into the future of technology with machine learning, neural networks, and AI application development in our advanced lab.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ Machine Learning Algorithms</li>
+                                                <li>✓ Neural Network Design</li>
+                                                <li>✓ Computer Vision Projects</li>
+                                                <li>✓ Natural Language Processing</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">🧠</div>
+                                                <p class="text-center font-semibold">AI Research Lab</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 5: Cybersecurity & Network Administration -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-red-600 to-pink-700 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">🔒</div>
+                                            <h3 class="text-3xl font-bold mb-4">Cybersecurity & Network Administration</h3>
+                                            <p class="text-lg mb-6">Learn to protect digital assets and manage network infrastructure. Our comprehensive security program covers ethical hacking, network defense, and system administration.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ Ethical Hacking & Penetration Testing</li>
+                                                <li>✓ Network Security & Firewalls</li>
+                                                <li>✓ Server Administration (Linux/Windows)</li>
+                                                <li>✓ Digital Forensics & Incident Response</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">🛡️</div>
+                                                <p class="text-center font-semibold">Security Operations Center</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 6: Data Science & Analytics -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-emerald-600 to-teal-700 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">📊</div>
+                                            <h3 class="text-3xl font-bold mb-4">Data Science & Analytics</h3>
+                                            <p class="text-lg mb-6">Transform raw data into actionable insights using modern data science tools and techniques. Master statistical analysis, data visualization, and predictive modeling.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ Python for Data Science (Pandas, NumPy)</li>
+                                                <li>✓ Statistical Analysis & Modeling</li>
+                                                <li>✓ Data Visualization (Tableau, Power BI)</li>
+                                                <li>✓ Big Data Technologies (Hadoop, Spark)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">📈</div>
+                                                <p class="text-center font-semibold">Data Analytics Lab</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 7: Mobile App Development -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-violet-600 to-purple-700 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">📱</div>
+                                            <h3 class="text-3xl font-bold mb-4">Mobile App Development</h3>
+                                            <p class="text-lg mb-6">Create powerful mobile applications for Android and iOS platforms. Learn both native and cross-platform development frameworks to reach millions of users.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ Android Development (Java/Kotlin)</li>
+                                                <li>✓ iOS Development (Swift)</li>
+                                                <li>✓ React Native & Flutter</li>
+                                                <li>✓ App Store Deployment & Monetization</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">📲</div>
+                                                <p class="text-center font-semibold">Mobile Development Studio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 8: Cloud Computing & DevOps -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-sky-600 to-blue-700 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">☁️</div>
+                                            <h3 class="text-3xl font-bold mb-4">Cloud Computing & DevOps</h3>
+                                            <p class="text-lg mb-6">Master cloud platforms and DevOps practices to build scalable, reliable applications. Learn AWS, Azure, containerization, and continuous integration/deployment.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ AWS & Azure Cloud Platforms</li>
+                                                <li>✓ Docker & Kubernetes</li>
+                                                <li>✓ CI/CD Pipelines (Jenkins, GitLab)</li>
+                                                <li>✓ Infrastructure as Code (Terraform)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">⚡</div>
+                                                <p class="text-center font-semibold">Cloud Infrastructure Lab</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 9: Digital Content Creation -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-amber-600 to-orange-700 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">🎬</div>
+                                            <h3 class="text-3xl font-bold mb-4">Digital Content Creation</h3>
+                                            <p class="text-lg mb-6">Master the art of digital storytelling through video production, animation, and multimedia content creation. Learn industry-standard tools and techniques.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ Video Production & Editing (Premiere Pro)</li>
+                                                <li>✓ Motion Graphics & Animation (After Effects)</li>
+                                                <li>✓ Podcast Production & Audio Editing</li>
+                                                <li>✓ Live Streaming & Broadcasting</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">🎥</div>
+                                                <p class="text-center font-semibold">Media Production Studio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 10: E-Commerce & Digital Business -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-rose-600 to-pink-700 text-white p-12 min-h-96 flex items-center">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center w-full">
+                                        <div class="slide-text">
+                                            <div class="text-6xl mb-4">🛒</div>
+                                            <h3 class="text-3xl font-bold mb-4">E-Commerce & Digital Business</h3>
+                                            <p class="text-lg mb-6">Learn to build and manage successful online businesses. Master e-commerce platforms, digital payment systems, and online business strategies.</p>
+                                            <ul class="space-y-2 text-sm">
+                                                <li>✓ E-commerce Platform Development</li>
+                                                <li>✓ Digital Payment Integration (M-Pesa, PayPal)</li>
+                                                <li>✓ Online Business Strategy & Marketing</li>
+                                                <li>✓ Inventory Management & Logistics</li>
+                                            </ul>
+                                        </div>
+                                        <div class="slide-image">
+                                            <div class="bg-white bg-opacity-20 p-8 rounded-xl">
+                                                <div class="text-8xl text-center mb-4">💼</div>
+                                                <p class="text-center font-semibold">Digital Business Incubator</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programs Carousel Navigation -->
+                    <button class="carousel-btn carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300" onclick="previousSlide('programs')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300" onclick="nextSlide('programs')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Programs Carousel Indicators -->
+                    <div class="carousel-indicators flex justify-center mt-6 space-x-3">
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300 active" onclick="goToSlide('programs', 0)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('programs', 1)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('programs', 2)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('programs', 3)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('programs', 4)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('programs', 5)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('programs', 6)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('programs', 7)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('programs', 8)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('programs', 9)"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facilities & Equipment Carousel -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Facilities</h3>
+                <div class="carousel-container relative max-w-5xl mx-auto fade-in" id="facilitiesCarousel">
+                    <div class="carousel-wrapper overflow-hidden rounded-2xl shadow-xl">
+                        <div class="carousel-track flex transition-transform duration-500 ease-in-out" id="facilitiesCarouselTrack">
+                            
+                            <!-- Facilities Slide 1: Computer Labs -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-6xl mb-4">🖥️</div>
+                                        <h3 class="text-2xl font-bold mb-4">Modern Computer Labs</h3>
+                                        <p class="text-lg mb-4">State-of-the-art computers with latest software and high-speed internet connectivity</p>
+                                        <div class="grid grid-cols-2 gap-4 text-sm">
+                                            <div>• 50+ Workstations</div>
+                                            <div>• Latest Software</div>
+                                            <div>• High-Speed Internet</div>
+                                            <div>• 24/7 Access</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Facilities Slide 2: Design Studios -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-pink-500 to-red-500 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-6xl mb-4">🎨</div>
+                                        <h3 class="text-2xl font-bold mb-4">Creative Design Studios</h3>
+                                        <p class="text-lg mb-4">Professional design workstations with graphics tablets and color-calibrated monitors</p>
+                                        <div class="grid grid-cols-2 gap-4 text-sm">
+                                            <div>• Graphics Tablets</div>
+                                            <div>• 4K Monitors</div>
+                                            <div>• Adobe Creative Suite</div>
+                                            <div>• Printing Equipment</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Facilities Slide 3: Media Production -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-green-500 to-teal-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-6xl mb-4">🎬</div>
+                                        <h3 class="text-2xl font-bold mb-4">Media Production Suite</h3>
+                                        <p class="text-lg mb-4">Professional video and audio production equipment for multimedia projects</p>
+                                        <div class="grid grid-cols-2 gap-4 text-sm">
+                                            <div>• Video Editing Suites</div>
+                                            <div>• Audio Recording</div>
+                                            <div>• Green Screen Studio</div>
+                                            <div>• Live Streaming Setup</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Facilities Slide 4: Innovation Lab -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-orange-500 to-yellow-500 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-6xl mb-4">🔬</div>
+                                        <h3 class="text-2xl font-bold mb-4">Innovation Lab</h3>
+                                        <p class="text-lg mb-4">Cutting-edge technology lab for robotics, IoT, and emerging tech experiments</p>
+                                        <div class="grid grid-cols-2 gap-4 text-sm">
+                                            <div>• Robotics Kits</div>
+                                            <div>• IoT Sensors</div>
+                                            <div>• 3D Printers</div>
+                                            <div>• VR/AR Equipment</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Facilities Slide 5: Network Infrastructure -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-cyan-500 to-blue-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-6xl mb-4">🌐</div>
+                                        <h3 class="text-2xl font-bold mb-4">Network Infrastructure Center</h3>
+                                        <p class="text-lg mb-4">Advanced networking lab with enterprise-grade equipment for hands-on learning</p>
+                                        <div class="grid grid-cols-2 gap-4 text-sm">
+                                            <div>• Cisco Routers & Switches</div>
+                                            <div>• Fiber Optic Networks</div>
+                                            <div>• Wireless Access Points</div>
+                                            <div>• Security Appliances</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Facilities Slide 6: Library & Study Areas -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-emerald-500 to-green-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-6xl mb-4">📚</div>
+                                        <h3 class="text-2xl font-bold mb-4">Digital Library & Study Spaces</h3>
+                                        <p class="text-lg mb-4">Modern library with digital resources and collaborative learning spaces</p>
+                                        <div class="grid grid-cols-2 gap-4 text-sm">
+                                            <div>• E-Books & Journals</div>
+                                            <div>• Quiet Study Areas</div>
+                                            <div>• Group Project Rooms</div>
+                                            <div>• Research Databases</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Facilities Slide 7: Cafeteria & Recreation -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-amber-500 to-red-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-6xl mb-4">🍽️</div>
+                                        <h3 class="text-2xl font-bold mb-4">Student Cafeteria & Recreation</h3>
+                                        <p class="text-lg mb-4">Comfortable spaces for dining, relaxation, and social interaction</p>
+                                        <div class="grid grid-cols-2 gap-4 text-sm">
+                                            <div>• Healthy Meal Options</div>
+                                            <div>• Gaming Lounge</div>
+                                            <div>• Outdoor Seating</div>
+                                            <div>• Student Activities Center</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Facilities Slide 8: Career Services -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-violet-500 to-purple-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-6xl mb-4">💼</div>
+                                        <h3 class="text-2xl font-bold mb-4">Career Services Center</h3>
+                                        <p class="text-lg mb-4">Dedicated support for career development and job placement assistance</p>
+                                        <div class="grid grid-cols-2 gap-4 text-sm">
+                                            <div>• Resume Writing Support</div>
+                                            <div>• Interview Preparation</div>
+                                            <div>• Industry Connections</div>
+                                            <div>• Internship Programs</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facilities Carousel Navigation -->
+                    <button class="carousel-btn carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300" onclick="previousSlide('facilities')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300" onclick="nextSlide('facilities')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Facilities Carousel Indicators -->
+                    <div class="carousel-indicators flex justify-center mt-6 space-x-3">
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300 active" onclick="goToSlide('facilities', 0)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('facilities', 1)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('facilities', 2)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('facilities', 3)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('facilities', 4)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('facilities', 5)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('facilities', 6)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('facilities', 7)"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Success Stories Carousel -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Student Success Stories</h3>
+                <div class="carousel-container relative max-w-5xl mx-auto fade-in" id="successCarousel">
+                    <div class="carousel-wrapper overflow-hidden rounded-2xl shadow-xl">
+                        <div class="carousel-track flex transition-transform duration-500 ease-in-out" id="successCarouselTrack">
+                            
+                            <!-- Success Story 1 -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-5xl mb-4">👨‍💻</div>
+                                        <h3 class="text-2xl font-bold mb-2">John Mukira</h3>
+                                        <p class="text-lg mb-4 italic">"From beginner to Full-Stack Developer"</p>
+                                        <p class="text-base mb-4">Started with zero programming knowledge, now working as a senior developer at a leading tech company in Nairobi.</p>
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                                            <p class="text-sm">Web Development Graduate - Class of 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Success Story 2 -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-pink-500 to-purple-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-5xl mb-4">👩‍🎨</div>
+                                        <h3 class="text-2xl font-bold mb-2">Mary Wanjiku</h3>
+                                        <p class="text-lg mb-4 italic">"Creative Designer & Entrepreneur"</p>
+                                        <p class="text-base mb-4">Launched her own design agency after completing our graphics design program, now serving 50+ clients.</p>
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                                            <p class="text-sm">Graphics Design Graduate - Class of 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Success Story 3 -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-green-500 to-blue-500 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-5xl mb-4">👨‍💼</div>
+                                        <h3 class="text-2xl font-bold mb-2">Peter Kimani</h3>
+                                        <p class="text-lg mb-4 italic">"Digital Marketing Specialist"</p>
+                                        <p class="text-base mb-4">Transformed his family business using digital marketing strategies learned at Digital Hub, tripling their revenue.</p>
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                                            <p class="text-sm">Digital Marketing Graduate - Class of 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Success Story 4 -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-orange-500 to-red-500 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-5xl mb-4">👩‍🔬</div>
+                                        <h3 class="text-2xl font-bold mb-2">Grace Achieng</h3>
+                                        <p class="text-lg mb-4 italic">"AI Research Assistant"</p>
+                                        <p class="text-base mb-4">Now pursuing her Masters while working on cutting-edge AI projects at a research institution.</p>
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                                            <p class="text-sm">AI Program Graduate - Class of 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Success Story 5 -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-teal-500 to-cyan-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-5xl mb-4">👨‍💼</div>
+                                        <h3 class="text-2xl font-bold mb-2">Samuel Mwangi</h3>
+                                        <p class="text-lg mb-4 italic">"Cybersecurity Specialist"</p>
+                                        <p class="text-base mb-4">Secured a position at a major bank's cybersecurity team after completing our network security program.</p>
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                                            <p class="text-sm">Cybersecurity Graduate - Class of 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Success Story 6 -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-purple-500 to-indigo-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-5xl mb-4">👩‍🎨</div>
+                                        <h3 class="text-2xl font-bold mb-2">Faith Njoki</h3>
+                                        <p class="text-lg mb-4 italic">"Mobile App Developer"</p>
+                                        <p class="text-base mb-4">Developed three successful mobile apps that have been downloaded over 100,000 times combined.</p>
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                                            <p class="text-sm">Mobile Development Graduate - Class of 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Success Story 7 -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-rose-500 to-pink-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-5xl mb-4">👨‍🔬</div>
+                                        <h3 class="text-2xl font-bold mb-2">David Ochieng</h3>
+                                        <p class="text-lg mb-4 italic">"Data Scientist"</p>
+                                        <p class="text-base mb-4">Leading data analytics initiatives at a multinational corporation, helping drive business decisions through data insights.</p>
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                                            <p class="text-sm">Data Science Graduate - Class of 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Success Story 8 -->
+                            <div class="carousel-slide w-full flex-shrink-0 relative">
+                                <div class="slide-content bg-gradient-to-br from-yellow-500 to-orange-600 text-white p-10 min-h-80 flex items-center">
+                                    <div class="w-full text-center">
+                                        <div class="text-5xl mb-4">👩‍💻</div>
+                                        <h3 class="text-2xl font-bold mb-2">Catherine Wangari</h3>
+                                        <p class="text-lg mb-4 italic">"Cloud Solutions Architect"</p>
+                                        <p class="text-base mb-4">Designed and implemented cloud infrastructure for major enterprises, earning AWS certification within 6 months.</p>
+                                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                                            <p class="text-sm">Cloud Computing Graduate - Class of 2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success Stories Carousel Navigation -->
+                    <button class="carousel-btn carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300" onclick="previousSlide('success')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300" onclick="nextSlide('success')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Success Stories Carousel Indicators -->
+                    <div class="carousel-indicators flex justify-center mt-6 space-x-3">
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300 active" onclick="goToSlide('success', 0)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('success', 1)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('success', 2)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('success', 3)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('success', 4)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('success', 5)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('success', 6)"></button>
+                        <button class="w-3 h-3 bg-gray-400 rounded-full transition-all duration-300" onclick="goToSlide('success', 7)"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+                <!-- Carousel Navigation -->
+                <button class="carousel-btn carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300" onclick="previousSlide()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all duration-300" onclick="nextSlide()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators flex justify-center space-x-2 mt-6">
+                    <button class="indicator active w-3 h-3 rounded-full bg-white transition-all duration-300" onclick="goToSlide(0)"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300" onclick="goToSlide(1)"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300" onclick="goToSlide(2)"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300" onclick="goToSlide(3)"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300" onclick="goToSlide(4)"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300" onclick="goToSlide(5)"></button>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="stats-section mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 fade-in">
+                <div class="stat-item text-center">
+                    <div class="text-4xl font-bold text-indigo-600 mb-2">100+</div>
+                    <div class="text-gray-600">Students Trained</div>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="text-4xl font-bold text-green-600 mb-2">15+</div>
+                    <div class="text-gray-600">Programs Offered</div>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="text-4xl font-bold text-purple-600 mb-2">95%</div>
+                    <div class="text-gray-600">Job Placement Rate</div>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="text-4xl font-bold text-orange-600 mb-2">10+</div>
+                    <div class="text-gray-600">Industry Partners</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section-full bg-white">
+        <div class="section-content">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Programs</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Discover our comprehensive range of digital learning experiences designed for different age groups and skill levels</p>
+            </div>
+
+            <!-- Kids Programs -->
+            <div class="mb-16 fade-in">
+                <h3 class="text-3xl font-bold text-center text-indigo-600 mb-12">👶 Programs for Kids</h3>
+                <div class="card-grid">
+                    <!-- Scratch Programming Card -->
+                    <div class="program-card card-orange">
+                        <div class="text-4xl mb-4">🎮</div>
+                        <h4 class="text-2xl font-bold mb-3">Scratch Programming</h4>
+                        <p class="mb-4">Learn coding fundamentals through visual programming with Scratch. Create games, animations, and interactive stories!</p>
+                        <ul class="text-sm space-y-1 mb-4">
+                            <li>• Visual block-based coding</li>
+                            <li>• Game development basics</li>
+                            <li>• Animation creation</li>
+                            <li>• Problem-solving skills</li>
+                        </ul>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-2 text-center">
+                            <span class="font-semibold">Ages 8-14</span>
+                        </div>
+                    </div>
+
+                    <!-- Creative Thinking Card -->
+                    <div class="program-card card-green">
+                        <div class="text-4xl mb-4">🎨</div>
+                        <h4 class="text-2xl font-bold mb-3">Creative Thinking</h4>
+                        <p class="mb-4">Develop imagination and innovation skills through digital art, storytelling, and creative problem-solving activities.</p>
+                        <ul class="text-sm space-y-1 mb-4">
+                            <li>• Digital art creation</li>
+                            <li>• Story development</li>
+                            <li>• Creative problem solving</li>
+                            <li>• Design thinking</li>
+                        </ul>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-2 text-center">
+                            <span class="font-semibold">Ages 6-16</span>
+                        </div>
+                    </div>
+
+                    <!-- Add New Kids Program Placeholder -->
+                    <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-6 text-center card-hover cursor-pointer" onclick="showAddProgramModal('kids')">
+                        <div class="text-4xl mb-4 text-gray-400">➕</div>
+                        <h4 class="text-xl font-semibold text-gray-600 mb-2">Add New Program</h4>
+                        <p class="text-gray-500">Click to add another kids program</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adult Programs -->
+            <div class="fade-in">
+                <h3 class="text-3xl font-bold text-center text-purple-600 mb-12">👨‍💼 Programs for Adults</h3>
+                <div class="card-grid">
+                    <!-- AI & Machine Learning Card -->
+                    <div class="program-card card-purple">
+                        <div class="text-4xl mb-4">🤖</div>
+                        <h4 class="text-2xl font-bold mb-3">AI & Machine Learning</h4>
+                        <p class="mb-4">Master artificial intelligence concepts and build intelligent applications using modern AI tools and frameworks.</p>
+                        <ul class="text-sm space-y-1 mb-4">
+                            <li>• AI fundamentals</li>
+                            <li>• Machine learning models</li>
+                            <li>• Data analysis</li>
+                            <li>• Practical AI applications</li>
+                        </ul>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-2 text-center">
+                            <span class="font-semibold">Beginner to Advanced</span>
+                        </div>
+                    </div>
+
+                    <!-- Graphic Design Card -->
+                    <div class="program-card card-pink">
+                        <div class="text-4xl mb-4">🎨</div>
+                        <h4 class="text-2xl font-bold mb-3">Graphic Design</h4>
+                        <p class="mb-4">Create stunning visual designs using professional tools and learn design principles for digital and print media.</p>
+                        <ul class="text-sm space-y-1 mb-4">
+                            <li>• Adobe Creative Suite</li>
+                            <li>• Brand identity design</li>
+                            <li>• Digital illustration</li>
+                            <li>• Print & web design</li>
+                        </ul>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-2 text-center">
+                            <span class="font-semibold">All Skill Levels</span>
+                        </div>
+                    </div>
+
+                    <!-- Web Development Card -->
+                    <div class="program-card card-teal">
+                        <div class="text-4xl mb-4">💻</div>
+                        <h4 class="text-2xl font-bold mb-3">Web Development</h4>
+                        <p class="mb-4">Build modern, responsive websites and web applications using the latest technologies and best practices.</p>
+                        <ul class="text-sm space-y-1 mb-4">
+                            <li>• HTML, CSS, JavaScript</li>
+                            <li>• Responsive design</li>
+                            <li>• Modern frameworks</li>
+                            <li>• Full-stack development</li>
+                        </ul>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-2 text-center">
+                            <span class="font-semibold">Beginner to Pro</span>
+                        </div>
+                    </div>
+
+                    <!-- Digital Marketing Card -->
+                    <div class="program-card card-yellow">
+                        <div class="text-4xl mb-4">📱</div>
+                        <h4 class="text-2xl font-bold mb-3">Digital Marketing</h4>
+                        <p class="mb-4">Learn to create effective digital marketing campaigns and grow your online presence across multiple platforms.</p>
+                        <ul class="text-sm space-y-1 mb-4">
+                            <li>• Social media marketing</li>
+                            <li>• Content strategy</li>
+                            <li>• SEO & analytics</li>
+                            <li>• Email marketing</li>
+                        </ul>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-2 text-center">
+                            <span class="font-semibold">Beginner Friendly</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Science Card -->
+                    <div class="program-card card-blue">
+                        <div class="text-4xl mb-4">📊</div>
+                        <h4 class="text-2xl font-bold mb-3">Data Science</h4>
+                        <p class="mb-4">Analyze complex data sets and extract meaningful insights using statistical methods and visualization tools.</p>
+                        <ul class="text-sm space-y-1 mb-4">
+                            <li>• Python for data analysis</li>
+                            <li>• Statistical modeling</li>
+                            <li>• Data visualization</li>
+                            <li>• Business intelligence</li>
+                        </ul>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-2 text-center">
+                            <span class="font-semibold">Intermediate+</span>
+                        </div>
+                    </div>
+
+                    <!-- Add New Adult Program Placeholder -->
+                    <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-6 text-center card-hover cursor-pointer" onclick="showAddProgramModal('adults')">
+                        <div class="text-4xl mb-4 text-gray-400">➕</div>
+                        <h4 class="text-xl font-semibold text-gray-600 mb-2">Add New Program</h4>
+                        <p class="text-gray-500">Click to add another adult program</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-full bg-gray-50">
+        <div class="section-content">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Digital Hub</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're passionate about making technology education accessible, engaging, and transformative for learners of all ages.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center fade-in">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Our Mission</h3>
+                    <p class="text-gray-600">To democratize digital education and empower individuals with the skills needed for the digital future.</p>
+                </div>
+                
+                <div class="text-center fade-in">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Our Community</h3>
+                    <p class="text-gray-600">A diverse community of learners, educators, and innovators working together to shape the future.</p>
+                </div>
+                
+                <div class="text-center fade-in">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Our Vision</h3>
+                    <p class="text-gray-600">To be the leading platform for creative and innovative digital education worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-content">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">Ready to start your digital learning journey? We'd love to hear from you!</p>
+            </div>
+            
+            <div class="contact-form fade-in">
+                <form class="grid md:grid-cols-2 gap-6">
+                    <div class="form-group">
+                        <label class="form-label">Name *</label>
+                        <input type="text" name="name" class="form-input" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email *</label>
+                        <input type="email" name="email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Age Group</label>
+                        <select name="ageGroup" class="form-input">
+                            <option value="">Select an option</option>
+                            <option value="Kids Programs">Kids Programs</option>
+                            <option value="Adult Programs">Adult Programs</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone</label>
+                        <input type="tel" name="phone" class="form-input" placeholder="Your phone number">
+                    </div>
+                    <div class="md:col-span-2 form-group">
+                        <label class="form-label">Message *</label>
+                        <textarea rows="4" name="message" class="form-input" placeholder="Tell us about your learning goals..." required></textarea>
+                    </div>
+                    <div class="md:col-span-2 text-center">
+                        <button type="submit" class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">Send Message</button>
+                        <p class="text-sm text-gray-500 mt-2">Messages will be sent to charles@stjosephsttid.ac.ke</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="section-content">
+            <div class="text-center">
+                <div class="text-3xl font-bold mb-4">Digital Hub</div>
+                <p class="text-gray-400 mb-6">Empowering the next generation of digital creators</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="+254721533429" class="text-gray-400 hover:text-white transition-colors">📧 Email</a>
+                    <a href="+254721533429" class="text-gray-400 hover:text-white transition-colors">📱 WhatsApp</a>
+                    <a href="+254721533429" class="text-gray-400 hover:text-white transition-colors">📞 Phone</a>
+                    <a href="+254721533429" class="text-gray-400 hover:text-white transition-colors">💬 Discord</a>
+                    <a href="+254721533429" class="text-gray-400 hover:text-white transition-colors">🔗 LinkedIn</a>
+                    <a href="+254721533429" class="text-gray-400 hover:text-white transition-colors">📸 Instagram</a>
+                    <a href="+254721533429" class="text-gray-400 hover:text-white transition-colors">📘 Facebook</a>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-gray-400">
+                    <p>&copy; 2025 Digital Hub STJTTID. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add Program Modal -->
+    <div id="addProgramModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-xl p-8 max-w-md w-full mx-4">
+            <h3 class="text-2xl font-bold mb-6">Add New Program</h3>
+            <form id="addProgramForm">
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Program Name *</label>
+                        <input type="text" name="programName" id="programName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500" placeholder="e.g., Robotics for Kids" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Description *</label>
+                        <textarea name="programDescription" id="programDescription" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500" placeholder="Brief description of the program..." required></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Emoji Icon</label>
+                        <input type="text" name="programEmoji" id="programEmoji" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500" placeholder="🤖" maxlength="2">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Age/Level *</label>
+                        <input type="text" name="programLevel" id="programLevel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500" placeholder="e.g., Ages 10-16 or Beginner" required>
+                    </div>
+                </div>
+                <div class="flex gap-4 mt-6">
+                    <button type="button" onclick="closeAddProgramModal()" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">Cancel</button>
+                    <button type="submit" class="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Add Program</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- EmailJS CDN for email functionality -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Main JavaScript file -->
+    <script src="script.js"></script>
+    
+    <!-- Initialize EmailJS with your service configuration -->
+    <script>
+        // Initialize EmailJS with your public key
+        if (typeof emailjs !== 'undefined') {
+            emailjs.init("PfG9GlmarV2gcPcKk"); // Your EmailJS public key
+            console.log("✅ EmailJS initialized successfully!");
+            console.log("✅ Service ID: service_zkqz97o");
+            console.log("✅ Target Email: charles@stjosephsttid.ac.ke");
+            console.log("⏳ Next step: Create email template and update template ID in script.js");
+        } else {
+            console.log("❌ EmailJS not loaded - check internet connection");
+        }
+    </script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9710f023f4ae9547',t:'MTc1NTUxNTE0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

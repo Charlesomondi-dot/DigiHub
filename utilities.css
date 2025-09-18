@@ -1,0 +1,478 @@
+/* Additional Responsive Utilities for Digital Hub */
+
+/* Viewport-based responsive units for full coverage */
+.w-screen { width: 100vw; }
+.h-screen { height: 100vh; }
+.min-h-screen { min-height: 100vh; }
+
+/* Responsive spacing utilities */
+.p-responsive { 
+    padding: clamp(1rem, 4vw, 3rem); 
+}
+
+.px-responsive { 
+    padding-left: clamp(1rem, 4vw, 3rem);
+    padding-right: clamp(1rem, 4vw, 3rem);
+}
+
+.py-responsive { 
+    padding-top: clamp(2rem, 6vh, 5rem);
+    padding-bottom: clamp(2rem, 6vh, 5rem);
+}
+
+/* Responsive text scaling */
+.text-responsive-sm { font-size: clamp(0.875rem, 2vw, 1rem); }
+.text-responsive-base { font-size: clamp(1rem, 2.5vw, 1.125rem); }
+.text-responsive-lg { font-size: clamp(1.125rem, 3vw, 1.5rem); }
+.text-responsive-xl { font-size: clamp(1.25rem, 4vw, 2rem); }
+.text-responsive-2xl { font-size: clamp(1.5rem, 5vw, 3rem); }
+.text-responsive-3xl { font-size: clamp(2rem, 6vw, 4rem); }
+.text-responsive-4xl { font-size: clamp(2.5rem, 8vw, 6rem); }
+
+/* Edge-to-edge coverage utilities */
+.full-bleed {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.container-edge {
+    padding-left: max(1rem, calc((100vw - 1400px) / 2));
+    padding-right: max(1rem, calc((100vw - 1400px) / 2));
+}
+
+/* Safe area support for mobile devices with notches */
+.safe-area-inset {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+
+/* Responsive grid systems */
+.grid-responsive-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(1rem, 3vw, 2rem);
+}
+
+.grid-responsive-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(1rem, 3vw, 2.5rem);
+}
+
+/* Responsive flex utilities */
+.flex-responsive {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .flex-responsive {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+/* Better touch targets for mobile */
+.touch-target {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Responsive image containers */
+.img-responsive {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-cover-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Scroll behavior improvements */
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+.scroll-margin-responsive {
+    scroll-margin-top: clamp(4rem, 8vh, 6rem);
+}
+
+/* Better focus styles for accessibility */
+.focus-visible-enhanced:focus-visible {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Responsive overflow handling */
+.overflow-x-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Container queries for component-level responsiveness */
+@container (min-width: 400px) {
+    .container-responsive-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .program-card {
+        border: 2px solid;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        border: 2px solid;
+    }
+}
+
+/* Reduced data mode for slower connections */
+@media (prefers-reduced-data: reduce) {
+    .hero-section::before {
+        display: none;
+    }
+    
+    .program-card {
+        background: linear-gradient(45deg, var(--card-color-1), var(--card-color-2));
+    }
+}
+
+/* Responsive breakpoint helpers */
+.show-mobile { display: block; }
+.show-tablet { display: none; }
+.show-desktop { display: none; }
+
+@media (min-width: 768px) {
+    .show-mobile { display: none; }
+    .show-tablet { display: block; }
+    .show-desktop { display: none; }
+}
+
+@media (min-width: 1024px) {
+    .show-mobile { display: none; }
+    .show-tablet { display: none; }
+    .show-desktop { display: block; }
+}
+
+/* Aspect ratio utilities */
+.aspect-square { aspect-ratio: 1 / 1; }
+.aspect-video { aspect-ratio: 16 / 9; }
+.aspect-photo { aspect-ratio: 4 / 3; }
+
+/* Container size queries (when supported) */
+@supports (container-type: inline-size) {
+    .container-query {
+        container-type: inline-size;
+    }
+}
+
+/* Better mobile keyboard handling */
+@supports (-webkit-touch-callout: none) {
+    .mobile-keyboard-adjust {
+        padding-bottom: env(keyboard-inset-height, 0);
+    }
+}
+
+/* Print optimizations */
+@media print {
+    .print-hidden { display: none !important; }
+    .print-visible { display: block !important; }
+    
+    .program-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .section-full {
+        page-break-before: auto;
+        page-break-after: auto;
+    }
+}
+
+/* Performance optimizations */
+.will-change-transform {
+    will-change: transform;
+}
+
+.gpu-accelerated {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Better scrolling on iOS */
+.momentum-scroll {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Responsive video embeds */
+.video-responsive {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-responsive iframe,
+.video-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Layout stability improvements */
+.layout-stable {
+    contain: layout style;
+}
+
+/* Better button responsiveness */
+.btn-responsive {
+    padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    border-radius: clamp(0.5rem, 1vw, 0.75rem);
+}
+
+/* Responsive modal/overlay */
+.modal-responsive {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(1rem, 4vw, 2rem);
+}
+
+.modal-content-responsive {
+    width: 100%;
+    max-width: min(90vw, 600px);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Responsive navigation */
+.nav-responsive {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Better hover states for touch devices */
+@media (hover: hover) {
+    .hover-lift:hover {
+        transform: translateY(-4px);
+    }
+}
+
+@media (hover: none) {
+    .hover-lift:active {
+        transform: translateY(-2px);
+    }
+}
+
+/* Additional carousel-specific utilities */
+.carousel-fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form validation utilities */
+.form-valid {
+    border-color: #10b981;
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+.form-invalid {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Loading states */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Utility for better text rendering */
+.text-crisp {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Better button states */
+.btn-loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn-loading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* EmailJS form utilities */
+.email-sending {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.email-success {
+    border-color: #10b981;
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+.email-error {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Dark mode support (if needed later) */
+@media (prefers-color-scheme: dark) {
+    .auto-dark {
+        background-color: #1f2937;
+        color: #f9fafb;
+    }
+    
+    .auto-dark .form-input {
+        background-color: #374151;
+        border-color: #4b5563;
+        color: #f9fafb;
+    }
+}
+
+/* Better responsive tables */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive table {
+    min-width: 600px;
+    width: 100%;
+}
+
+/* Utility classes for common patterns */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Better backdrop blur fallback */
+.backdrop-blur-fallback {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+    .backdrop-blur-fallback {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+/* Responsive card hover effects */
+.card-hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (hover: hover) {
+    .card-hover-scale:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Better focus trap for modals */
+.focus-trap {
+    position: relative;
+}
+
+.focus-trap::before,
+.focus-trap::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Intersection observer utilities */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-left.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-right.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
