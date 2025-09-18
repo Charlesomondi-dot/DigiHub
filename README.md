@@ -29,3 +29,7 @@ Welcome to the DigiHub project! This is a modern, responsive web portal for St. 
 ## License
 
 This project is for educational and demonstration purposes at St. Joseph's Technical Training Institute. Contact the institute for usage permissions.
+
+## Author
+
+Charles Omondi
